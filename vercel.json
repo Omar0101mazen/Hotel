@@ -1,15 +1,8 @@
 {
-    "builds": [
-      {
-        "src": "Hotelführer/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" , "runtime" : "python3.11"}
-      }
-    ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "Hotelführer/wsgi.py"
+        "destination": "/"
       }
     ]
 }
